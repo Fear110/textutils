@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function TextForm(props) {
-  const [text, setText] = useState('Hello there 🔥');
+  const [text, setText] = useState('');
   const handleOnChange = event => {
     setText(event.target.value);
   };
@@ -39,7 +39,6 @@ export default function TextForm(props) {
       <div className="container">
         <h2>Your text summery</h2>
         <p>
-          your paragraph have {text.length} letters and {text.split(' ').length-1} words
         </p>
         <p>
           This paragraph takes {text.length*0.008} minutes to read
